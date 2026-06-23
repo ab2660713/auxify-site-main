@@ -8,12 +8,14 @@ type SvgLength = SvgProps['width'];
 export type LogoProps = SvgProps & {
   inkColor?: string;
   size?: SvgLength;
+  decorative?: boolean;
 };
 
 const Logo = React.forwardRef<SVGSVGElement, LogoProps>(
   (
     {
       className,
+      decorative,
       height,
       inkColor = 'var(--brand-ink)',
       role,
@@ -26,7 +28,7 @@ const Logo = React.forwardRef<SVGSVGElement, LogoProps>(
     },
     ref,
   ) => {
-    const isHidden = ariaHidden === true || ariaHidden === 'true';
+    const isHidden = decorative || ariaHidden === true || ariaHidden === 'true';
     const defaultLabel = 'Auxify Logo';
     const shouldUseDefaultLabel = !isHidden && !ariaLabel && !ariaLabelledBy;
 

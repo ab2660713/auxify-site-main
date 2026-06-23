@@ -12,6 +12,7 @@ const navigationItems = [
   { label: 'Platform', href: '/platform' },
   { label: 'Solutions', href: '/solutions' },
   { label: 'Industries', href: '/industries' },
+  { label: 'Pricing', href: '/pricing' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -222,7 +223,7 @@ export default function Header() {
               <LogoLockup size="2.2rem" className="transition-opacity duration-300 sm:max-w-none" />
             </Link>
 
-            <div className="hidden items-center gap-10 min-[960px]:flex">
+            <div className="hidden items-center gap-6 min-[960px]:flex lg:gap-8">
               {navigationItems.map((item) => (
                 <Link
                   key={item.href}
