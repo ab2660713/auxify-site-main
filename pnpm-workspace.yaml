@@ -1,0 +1,12 @@
+engineStrict: true
+packageManagerStrict: true
+allowBuilds:
+  msw: true
+  sharp: true
+  unrs-resolver: true
+overrides:
+  'next>postcss': 8.5.15
+  postcss: 8.5.15
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver

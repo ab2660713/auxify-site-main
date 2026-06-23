@@ -1,0 +1,17 @@
+.rings {
+  transform-box: view-box;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rings {
+    animation: spin 1.8s linear infinite;
+    will-change: transform;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}

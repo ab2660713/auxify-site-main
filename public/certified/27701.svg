@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#5b6e8a" stroke-width="3"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#5b6e8a" stroke-width="1"/>
+
+  <!-- Ring fill area for curved text -->
+  <path id="topTextPath" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0" fill="none"/>
+  <path id="bottomTextPath" d="M 100,100 m 75,0 a 75,75 0 1,1 -150,0" fill="none"/>
+
+  <!-- Curved text top - Privacy Information Management System -->
+  <text font-family="Arial, sans-serif" font-size="9.5" fill="#5b6e8a" font-weight="600" letter-spacing="1.2">
+    <textPath href="#topTextPath" startOffset="50%" text-anchor="middle">Privacy Information Management System</textPath>
+  </text>
+
+  <!-- Curved text bottom - Certified -->
+  <text font-family="Arial, sans-serif" font-size="12" fill="#5b6e8a" font-weight="700" letter-spacing="2">
+    <textPath href="#bottomTextPath" startOffset="50%" text-anchor="middle">Certified</textPath>
+  </text>
+
+  <!-- Globe/world icon in center top -->
+  <g transform="translate(100, 58)">
+    <!-- Globe circle -->
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#5b6e8a" stroke-width="1.5"/>
+    <!-- Globe horizontal lines -->
+    <ellipse cx="0" cy="0" rx="18" ry="6" fill="none" stroke="#5b6e8a" stroke-width="0.8"/>
+    <ellipse cx="0" cy="-10" rx="14" ry="3" fill="none" stroke="#5b6e8a" stroke-width="0.6"/>
+    <ellipse cx="0" cy="10" rx="14" ry="3" fill="none" stroke="#5b6e8a" stroke-width="0.6"/>
+    <!-- Globe vertical lines -->
+    <ellipse cx="0" cy="0" rx="8" ry="18" fill="none" stroke="#5b6e8a" stroke-width="0.8"/>
+    <line x1="0" y1="-18" x2="0" y2="18" stroke="#5b6e8a" stroke-width="0.8"/>
+    <line x1="-18" y1="0" x2="18" y2="0" stroke="#5b6e8a" stroke-width="0.8"/>
+  </g>
+
+  <!-- ISO text -->
+  <text x="100" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#5b6e8a">ISO</text>
+
+  <!-- Number -->
+  <text x="100" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#5b6e8a">27701</text>
+
+  <!-- Small decorative dots between text areas -->
+  <circle cx="35" cy="100" r="2.5" fill="#5b6e8a"/>
+  <circle cx="165" cy="100" r="2.5" fill="#5b6e8a"/>
+  <circle cx="55" cy="155" r="2" fill="#5b6e8a"/>
+  <circle cx="145" cy="155" r="2" fill="#5b6e8a"/>
+</svg>

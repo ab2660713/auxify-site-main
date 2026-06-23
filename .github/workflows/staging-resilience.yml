@@ -1,0 +1,77 @@
+name: auxify-site-staging-resilience
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: Site staging origin to test.
+        required: true
+        default: https://staging.auxify.live
+      stress_duration_ms:
+        description: Stress load duration in milliseconds.
+        required: true
+        default: '60000'
+      stress_concurrency:
+        description: Stress load concurrency.
+        required: true
+        default: '50'
+      chaos_duration_ms:
+        description: Chaos probe duration in milliseconds. Trigger the external fault while this runs.
+        required: true
+        default: '120000'
+      chaos_scenario:
+        description: Operator-facing label for the external fault being injected.
+        required: true
+        default: edge-or-service-rolling-restart
+      expect_disruption:
+        description: Fail if the chaos window produces no failed probes.
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: auxify-site-staging-resilience
+  cancel-in-progress: false
+
+jobs:
+  staging-resilience:
+    name: Site Staging Stress And Chaos
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+
+      - name: Enable pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@11.1.2 --activate
+
+      - name: Verify staging deployment
+        run: pnpm verify:deployment
+        env:
+          AUXIFY_SITE_BASE_URL: ${{ inputs.base_url }}
+
+      - name: Run staging stress load
+        run: pnpm test:load:stress
+        env:
+          AUXIFY_SITE_BASE_URL: ${{ inputs.base_url }}
+          AUXIFY_STRESS_CONCURRENCY: ${{ inputs.stress_concurrency }}
+          AUXIFY_STRESS_DURATION_MS: ${{ inputs.stress_duration_ms }}
+
+      - name: Run staging chaos drill
+        run: pnpm test:chaos:drill
+        env:
+          AUXIFY_CHAOS_DURATION_MS: ${{ inputs.chaos_duration_ms }}
+          AUXIFY_CHAOS_EXPECT_DISRUPTION: ${{ inputs.expect_disruption }}
+          AUXIFY_CHAOS_SCENARIO: ${{ inputs.chaos_scenario }}
+          AUXIFY_SITE_BASE_URL: ${{ inputs.base_url }}
