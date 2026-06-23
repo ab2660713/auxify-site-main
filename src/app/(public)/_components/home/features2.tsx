@@ -104,7 +104,7 @@ function VoiceAgentCard() {
   return (
     <div className="flex h-full flex-col items-center justify-center gap-3 p-5">
       <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-[#014baa]/10">
-        <Mic className="h-7 w-7 text-[#014baa]" />
+        <Mic className="h-7 w-7 text-[#0a0a0a]" />
         <div className="absolute inset-0 animate-ping rounded-full bg-[#00C6A7]/20 opacity-30" />
       </div>
       <div className="flex items-center gap-2 rounded-full bg-white px-3 py-1.5 shadow-sm">
@@ -152,7 +152,7 @@ function CampaignsCard() {
     <div className="flex h-full flex-col justify-center gap-2 p-4">
       <div className="rounded-md bg-white p-2 shadow-sm">
         <div className="flex items-center justify-between">
-          <span className="text-[9px] font-semibold text-[#014baa]">Follow-up</span>
+          <span className="text-[9px] font-semibold text-[#0a0a0a]">Follow-up</span>
           <span className="rounded-full bg-[#00C6A7]/10 px-1.5 py-0.5 text-[8px] text-[#00C6A7]">Active</span>
         </div>
         <div className="mt-1 h-1 w-full rounded-full bg-[#E2E8F0]">
@@ -161,7 +161,7 @@ function CampaignsCard() {
       </div>
       <div className="rounded-md bg-white p-2 shadow-sm">
         <div className="flex items-center justify-between">
-          <span className="text-[9px] font-semibold text-[#014baa]">Reactivation</span>
+          <span className="text-[9px] font-semibold text-[#0a0a0a]">Reactivation</span>
           <span className="rounded-full bg-[#F5A623]/10 px-1.5 py-0.5 text-[8px] text-[#F5A623]">Scheduled</span>
         </div>
         <div className="mt-1 flex gap-2 text-[8px] text-[#4A5568]">
@@ -214,7 +214,7 @@ function AiAssistantCard() {
     <div className="flex h-full flex-col justify-center gap-2 p-4">
       <div className="flex items-center gap-1.5">
         <Zap className="h-3 w-3 text-[#F5A623]" />
-        <span className="text-[9px] font-semibold text-[#014baa]">AI Suggestions</span>
+        <span className="text-[9px] font-semibold text-[#0a0a0a]">AI Suggestions</span>
       </div>
       <div className="space-y-1">
         <div className="rounded bg-[#1B3FFF]/5 px-2 py-1 text-[8px] text-[#1B3FFF]">Offer 15% discount</div>
@@ -233,17 +233,17 @@ function CrmCard() {
           <User className="h-3.5 w-3.5 text-[#4A5568]" />
         </div>
         <div>
-          <p className="text-[9px] font-semibold text-[#014baa]">Rahul Sharma</p>
+          <p className="text-[9px] font-semibold text-[#0a0a0a]">Rahul Sharma</p>
           <p className="text-[8px] text-[#4A5568]">Enterprise</p>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-1">
         <div className="rounded bg-gray-50 p-1 text-center">
-          <p className="text-[10px] font-bold text-[#014baa]">12</p>
+          <p className="text-[10px] font-bold text-[#0a0a0a]">12</p>
           <p className="text-[7px] text-[#4A5568]">Chats</p>
         </div>
         <div className="rounded bg-gray-50 p-1 text-center">
-          <p className="text-[10px] font-bold text-[#014baa]">3</p>
+          <p className="text-[10px] font-bold text-[#0a0a0a]">3</p>
           <p className="text-[7px] text-[#4A5568]">Deals</p>
         </div>
         <div className="rounded bg-gray-50 p-1 text-center">
@@ -282,7 +282,7 @@ function SelfLearningCard() {
       <div className="w-full space-y-1">
         <div className="flex items-center justify-between rounded bg-white px-2 py-1 shadow-sm">
           <span className="text-[8px] text-[#4A5568]">Learned</span>
-          <span className="text-[8px] font-bold text-[#014baa]">2,847</span>
+          <span className="text-[8px] font-bold text-[#0a0a0a]">2,847</span>
         </div>
         <div className="flex items-center justify-between rounded bg-white px-2 py-1 shadow-sm">
           <span className="text-[8px] text-[#4A5568]">Accuracy</span>
@@ -299,12 +299,12 @@ function AnalyticsCard() {
       <div className="flex gap-2">
         <div className="flex-1 rounded bg-white p-1.5 shadow-sm">
           <p className="text-[8px] text-[#4A5568]">Calls</p>
-          <p className="text-xs font-bold text-[#014baa]">8.4K</p>
+          <p className="text-xs font-bold text-[#0a0a0a]">8.4K</p>
           <TrendingUp className="h-2.5 w-2.5 text-[#00C6A7]" />
         </div>
         <div className="flex-1 rounded bg-white p-1.5 shadow-sm">
           <p className="text-[8px] text-[#4A5568]">Resolved</p>
-          <p className="text-xs font-bold text-[#014baa]">94%</p>
+          <p className="text-xs font-bold text-[#0a0a0a]">94%</p>
           <TrendingUp className="h-2.5 w-2.5 text-[#00C6A7]" />
         </div>
       </div>
@@ -384,10 +384,10 @@ export default function Features2() {
       <div className="mx-auto w-full max-w-7xl px-4">
         {/* Section heading */}
         <div className="mb-14 text-center">
-          <p className="mb-4 inline-block rounded-full border border-[#1B3FFF]/20 bg-[#1B3FFF]/5 px-4 py-1.5 text-xs font-semibold text-[#1B3FFF]">
+          {/* <p className="mb-4 inline-block rounded-full border border-[#1B3FFF]/20 bg-[#1B3FFF]/5 px-4 py-1.5 text-xs font-semibold text-[#1B3FFF]">
             10 AI Agents. One Platform.
-          </p>
-          <h2 className="mx-auto max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-[#014baa] sm:text-5xl lg:text-6xl">
+          </p> */}
+          <h2 className="mx-auto max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-[#0a0a0a] sm:text-5xl lg:text-6xl">
             Everything you need to{' '}
             <span className="text-[#1B3FFF]">automate revenue.</span>
           </h2>
@@ -414,10 +414,6 @@ export default function Features2() {
           {displayCards.map((feature, i) => {
             const Visual = cardVisuals[feature.id];
             const isFlipped = feature.id === flippedId;
-            const posInSet = i % features.length;
-            // Deep parabolic arc — center cards rise high, edges dip low
-            const t = (posInSet - (features.length - 1) / 2) / ((features.length - 1) / 2);
-            const curveY = t * t * 90;
 
             return (
               <div
@@ -426,7 +422,6 @@ export default function Features2() {
                 style={{
                   width: '17rem',
                   height: '23rem',
-                  marginTop: `${curveY}px`,
                 }}
                 onMouseEnter={() => setFlippedId(feature.id)}
                 onMouseLeave={() => setFlippedId(null)}
@@ -441,7 +436,7 @@ export default function Features2() {
                       </div>
                       <div className="border-t border-[#E2E8F0] bg-gray-50 px-4 py-3 text-center">
                         <feature.icon className="mx-auto h-5 w-5 text-[#1B3FFF]" />
-                        <p className="mt-1 text-xs font-semibold text-[#014baa]">{feature.label}</p>
+                        <p className="mt-1 text-xs font-semibold text-[#0a0a0a]">{feature.label}</p>
                       </div>
                     </div>
                   </div>

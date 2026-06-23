@@ -52,7 +52,7 @@ function HeroSection() {
     <section className="relative w-full overflow-hidden bg-white">
       <div className="mx-auto w-full max-w-[1680px] p-3 sm:p-4">
         <div
-          className="relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[#F8FAFC]"
+          className="relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[linear-gradient(135deg,#EEF4FF_0%,#F0EEFF_40%,#E8F4FF_70%,#F8FAFC_100%)]"
           id="top"
         >
           <div className="relative grid items-center gap-10 px-5 py-14 sm:px-10 lg:grid-cols-[1.02fr_0.98fr] lg:py-20">
@@ -66,7 +66,7 @@ function HeroSection() {
             >
               <p className="inline-flex items-center gap-2 rounded-full border border-[#1B3FFF]/20 bg-[#1B3FFF]/5 px-3.5 py-2 text-xs font-black tracking-[0.16em] text-[#1B3FFF] uppercase">
                 <Bot className="size-4" />
-                One operating layer for every team
+                
               </p>
 
               <h1 className="mt-7 max-w-2xl text-[clamp(2.5rem,5.4vw,4.4rem)] leading-[0.92] font-semibold tracking-[-0.035em] text-balance text-[#07111D] max-lg:mx-auto">
@@ -177,7 +177,7 @@ function TeamSolutionsSection() {
 
   return (
     <section
-      className={cn("bg-[#F7F8FC] py-16 lg:py-24", pageX)}
+      className={cn("bg-white py-16 lg:py-24", pageX)}
       id="team-solutions"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -185,7 +185,7 @@ function TeamSolutionsSection() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           align="center"
-          eyebrow="Built for how teams work"
+          eyebrow=""
           eyebrowIcon={Layers}
           lead="Each team gets a workflow shaped around its goals—while every conversation, record, and handoff stays connected."
           title="One connected AI operating layer."
@@ -246,7 +246,7 @@ function TeamSolutionsSection() {
                     <Icon className="size-7" />
                   </div>
 
-                  <h2 className="mt-5 text-[clamp(1.8rem,3.5vw,2.8rem)] leading-[0.96] font-black tracking-[-0.04em] text-[#014BAA]">
+                  <h2 className="mt-5 text-[clamp(1.8rem,3.5vw,2.8rem)] leading-[0.96] font-black tracking-[-0.04em] text-[#0a0a0a]">
                     {team.title}
                   </h2>
                   <p className="mt-3 text-base leading-7 font-bold tracking-[-0.01em] text-[#4A5568] sm:text-lg">
@@ -326,7 +326,7 @@ function FinalCtaSection() {
         <div>
           <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-2 text-xs font-black tracking-[0.16em] uppercase ring-1 ring-white/18">
             <Network className="size-4" />
-            One connected platform
+            
           </p>
           <h2 className="mt-5 max-w-4xl text-[clamp(2.5rem,6vw,5rem)] leading-[0.94] font-black tracking-[-0.07em] text-balance">
             Give every team one source of customer truth.
@@ -340,7 +340,7 @@ function FinalCtaSection() {
         <div className="flex flex-col gap-3">
           <Button
             asChild
-            className="h-12 rounded-full bg-white px-7 text-sm font-extrabold text-[#014BAA] transition hover:-translate-y-0.5 hover:bg-[#EEF5FF]"
+            className="h-12 rounded-full bg-white px-7 text-sm font-extrabold text-[#0a0a0a] transition hover:-translate-y-0.5 hover:bg-[#EEF5FF]"
           >
             <Link href="/sign-up">
               Start Free Trial

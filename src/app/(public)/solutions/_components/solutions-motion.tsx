@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export const pageX = "px-5 sm:px-8 lg:px-12 xl:px-20";
 
 export const eyebrowClass =
-  "inline-flex items-center gap-2 rounded-full border border-[#BFD1FF] bg-white px-3.5 py-1.5 text-xs font-black tracking-[0.16em] text-[#014BAA] uppercase shadow-[0_18px_46px_-34px_rgba(1,75,170,0.6)]";
+  "inline-flex items-center gap-2 rounded-full border border-[#BFD1FF] bg-white px-3.5 py-1.5 text-xs font-black tracking-[0.16em] text-[#0a0a0a] uppercase shadow-[0_18px_46px_-34px_rgba(1,75,170,0.6)]";
 
 /** Fade + rise on scroll into view. */
 export function Reveal({

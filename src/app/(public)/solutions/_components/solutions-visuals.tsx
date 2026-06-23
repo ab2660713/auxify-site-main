@@ -129,10 +129,10 @@ export function ConvergenceMap() {
                 className="flex min-h-14 flex-col items-center justify-center gap-1.5 rounded-2xl border border-[#DCE6F4] bg-[#F8FBFF] px-2 py-3 text-center"
                 key={item.label}
               >
-                <span className="grid size-8 place-items-center rounded-lg bg-white text-[#014BAA] ring-1 ring-[#D8E6F8]">
+                <span className="grid size-8 place-items-center rounded-lg bg-white text-[#0a0a0a] ring-1 ring-[#D8E6F8]">
                   <Icon className="size-4" />
                 </span>
-                <span className="text-[0.72rem] leading-3 font-black text-[#014BAA]">
+                <span className="text-[0.72rem] leading-3 font-black text-[#0a0a0a]">
                   {item.label}
                 </span>
               </div>

@@ -75,7 +75,7 @@ function HeroSection({ industry }: { industry: Industry }) {
             viewport={{ once: true }}
           >
             <Link
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#4A5568] transition hover:text-[#014BAA] sm:hidden"
+              className="inline-flex items-center gap-2 text-xs font-bold text-[#4A5568] transition hover:text-[#0a0a0a] sm:hidden"
               href="/industries"
             >
               <ArrowLeft className="size-4" />
@@ -132,7 +132,7 @@ function HeroSection({ industry }: { industry: Industry }) {
               </Button>
               <Button
                 asChild
-                className="h-12 rounded-full border-[#D7E0EF] bg-white px-6 text-sm font-extrabold text-[#014BAA] transition hover:-translate-y-0.5 hover:bg-[#F7F8FC]"
+                className="h-12 rounded-full border-[#D7E0EF] bg-white px-6 text-sm font-extrabold text-[#0a0a0a] transition hover:-translate-y-0.5 hover:bg-[#F7F8FC]"
                 variant="outline"
               >
                 <a href="#agents">Meet the agents</a>
@@ -227,7 +227,7 @@ function AgentsSection({
     <section className={cn("bg-white py-20 lg:py-28", pageX)} id="agents">
       <div className="mx-auto max-w-7xl">
         <Reveal>
-          <p className="inline-flex items-center gap-2 text-xs font-black tracking-[0.18em] text-[#014BAA] uppercase">
+          <p className="inline-flex items-center gap-2 text-xs font-black tracking-[0.18em] text-[#0a0a0a] uppercase">
             <Sparkles className="size-3.5" />
             Seven agents, one team
           </p>
@@ -352,7 +352,7 @@ function WorkflowSection({ industry }: { industry: Industry }) {
     <section className={cn("bg-[#F7F8FC] py-20 lg:py-28", pageX)}>
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[minmax(0,0.86fr)_minmax(0,1.14fr)] lg:items-center lg:gap-12">
         <Reveal>
-          <p className="inline-flex items-center gap-2 text-xs font-black tracking-[0.18em] text-[#014BAA] uppercase">
+          <p className="inline-flex items-center gap-2 text-xs font-black tracking-[0.18em] text-[#0a0a0a] uppercase">
             <Sparkles className="size-3.5" />
             {industry.focus}
           </p>
@@ -404,7 +404,7 @@ function CtaSection({ industry }: { industry: Industry }) {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button
               asChild
-              className="h-12 rounded-full bg-white px-6 text-sm font-extrabold text-[#014BAA] shadow-[0_24px_56px_-28px_rgba(0,0,0,0.5)] transition hover:-translate-y-0.5"
+              className="h-12 rounded-full bg-white px-6 text-sm font-extrabold text-[#0a0a0a] shadow-[0_24px_56px_-28px_rgba(0,0,0,0.5)] transition hover:-translate-y-0.5"
               style={{ color: industry.accent }}
             >
               <Link href="/sign-up">

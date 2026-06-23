@@ -169,7 +169,7 @@ export default function Experience2() {
           <Bot className="h-3.5 w-3.5 text-white" />
         </div>
         <div className="flex-1">
-          <p className="text-[11px] font-bold text-[#014baa]">{activeAgent.label}</p>
+          <p className="text-[11px] font-bold text-[#0a0a0a]">{activeAgent.label}</p>
           <p className="text-[9px] text-[#00C6A7] font-medium">● Online</p>
         </div>
       </div>
@@ -274,7 +274,7 @@ export default function Experience2() {
               AI employees
               <br />
               that work{' '}
-              <span className="text-[#1B3FFF]">for you.</span>
+              <span className="text-[#1B3FFF]">for you</span>
             </h2>
           </div>
           <div className="lg:max-w-md">
@@ -292,7 +292,7 @@ export default function Experience2() {
               </a>
               <a
                 href="#"
-                className="inline-flex items-center gap-2 rounded-full border border-[#E2E8F0] bg-white px-5 py-2.5 text-sm font-semibold text-[#014baa] transition-all hover:-translate-y-0.5 hover:border-[#014baa]/30 hover:shadow-sm"
+                className="inline-flex items-center gap-2 rounded-full border border-[#E2E8F0] bg-white px-5 py-2.5 text-sm font-semibold text-[#0a0a0a] transition-all hover:-translate-y-0.5 hover:border-[#014baa]/30 hover:shadow-sm"
               >
                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#014baa]">
                   <ArrowRight className="h-2.5 w-2.5 text-white" />
@@ -340,7 +340,7 @@ export default function Experience2() {
 
             {/* Agent name + dots */}
             <div className="text-center">
-              <p className="text-base font-bold text-[#014baa]">{activeAgent.label}</p>
+              <p className="text-base font-bold text-[#0a0a0a]">{activeAgent.label}</p>
               <div className="mt-3 flex items-center justify-center gap-1.5">
                 {agents.map((_, i) => (
                   <button
@@ -389,7 +389,7 @@ export default function Experience2() {
                     <span
                       className={cn(
                         'text-xs font-semibold transition-colors sm:text-sm',
-                        isActive ? 'text-[#014baa]' : 'text-[#4A5568]'
+                        isActive ? 'text-[#0a0a0a]' : 'text-[#4A5568]'
                       )}
                     >
                       {agent.label}
@@ -432,7 +432,7 @@ export default function Experience2() {
                     <span
                       className={cn(
                         'text-sm font-semibold whitespace-nowrap transition-colors',
-                        isActive ? 'text-[#014baa]' : 'text-[#4A5568]'
+                        isActive ? 'text-[#0a0a0a]' : 'text-[#4A5568]'
                       )}
                     >
                       {agent.label}
@@ -522,7 +522,7 @@ export default function Experience2() {
                     <span
                       className={cn(
                         'text-sm font-semibold whitespace-nowrap transition-colors',
-                        isActive ? 'text-[#014baa]' : 'text-[#4A5568]'
+                        isActive ? 'text-[#0a0a0a]' : 'text-[#4A5568]'
                       )}
                     >
                       {agent.label}

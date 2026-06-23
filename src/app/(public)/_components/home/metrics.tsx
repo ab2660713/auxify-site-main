@@ -60,7 +60,7 @@ function MetricCard({ metric, index, inView }: { metric: (typeof metrics)[number
   return (
     <div className="flex flex-col items-center text-center px-3 py-8">
       {/* big number */}
-      <dd className="font-mono text-5xl font-bold tabular-nums leading-none text-[#014baa] sm:text-6xl">
+      <dd className="font-mono text-5xl font-bold tabular-nums leading-none text-[#0a0a0a] sm:text-6xl">
         {metric.prefix}
         {inView ? count.toLocaleString() : 0}
         {metric.suffix}

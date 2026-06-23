@@ -71,10 +71,10 @@ export default function Industries() {
       <div className="relative mx-auto w-full max-w-7xl px-4">
         {/* Heading */}
         <div className="mb-16 text-center">
-          <p className="mb-4 inline-block rounded-full border border-[#1B3FFF]/20 bg-[#1B3FFF]/5 px-4 py-1.5 text-xs font-semibold text-[#1B3FFF]">
-            Industry Solutions
-          </p>
-          <h2 className="text-4xl font-bold tracking-tight text-[#014baa] sm:text-5xl lg:text-6xl">
+          {/* <p className="mb-4 inline-block rounded-full border border-[#1B3FFF]/20 bg-[#1B3FFF]/5 px-4 py-1.5 text-xs font-semibold text-[#1B3FFF]">
+            
+          </p> */}
+          <h2 className="text-4xl font-bold tracking-tight text-[#0a0a0a] sm:text-5xl lg:text-6xl">
             Built for businesses where
             <br />
             every inquiry drives{' '}
@@ -144,7 +144,7 @@ export default function Industries() {
                     </span>
                   </div>
 
-                  <h3 className="text-base font-bold text-[#014baa]">{industry.title}</h3>
+                  <h3 className="text-base font-bold text-[#0a0a0a]">{industry.title}</h3>
 
                   <div
                     className="my-3 h-0.5 w-10 rounded-full transition-all duration-500"

@@ -505,7 +505,7 @@ function LeadsVisual({ accent }: VisualProps) {
           </div>
         </div>
         <div className="mt-3 flex gap-2">
-          <span className="rounded-md bg-[#EAF2FF] px-2 py-0.5 text-[0.6rem] font-bold text-[#014BAA]">
+          <span className="rounded-md bg-[#EAF2FF] px-2 py-0.5 text-[0.6rem] font-bold text-[#0a0a0a]">
             Hot Lead
           </span>
           <span className="rounded-md bg-[#E8F8F1] px-2 py-0.5 text-[0.6rem] font-bold text-[#008756]">

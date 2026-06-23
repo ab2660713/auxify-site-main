@@ -100,7 +100,7 @@ const PLAN_CARDS: readonly PlanCard[] = [
     description:
       "A focused starter pack for startups, small sales teams, and early support teams that need CRM, conversations, AI follow-up, campaigns, and team guidance.",
     icon: CircleDollarSign,
-    accentClassName: "bg-[#EEF5FF] text-[#014BAA] ring-[#BFD1FF]",
+    accentClassName: "bg-[#EEF5FF] text-[#0a0a0a] ring-[#BFD1FF]",
     meterClassName: "bg-[#014BAA]",
     stats: [
       { label: "AI Employees", value: "2" },
@@ -255,7 +255,7 @@ const ADD_ONS = [
     label: "Voice Usage",
     price: "₹1.25",
     icon: PhoneCall,
-    toneClassName: "bg-[#EEF5FF] text-[#014BAA]",
+    toneClassName: "bg-[#EEF5FF] text-[#0a0a0a]",
   },
   {
     label: "Additional AI Employee (Starter)",
@@ -388,7 +388,7 @@ const FAQS: ReadonlyArray<{
 ] as const;
 
 const sectionEyebrowClass =
-  "text-xs font-black tracking-[0.2em] text-[#014BAA] uppercase";
+  "text-xs font-black tracking-[0.2em] text-[#0a0a0a] uppercase";
 
 const sectionTitleClass =
   "mt-4 text-[clamp(2.25rem,5vw,4.75rem)] leading-[0.95] font-black tracking-[-0.06em] text-balance text-[#07111D]";
@@ -411,14 +411,12 @@ export function PricingPage() {
 
 function HeroSection() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#EEF5FF] px-4 py-10 sm:px-8 sm:py-14 lg:py-16">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(1,75,170,0.055)_1px,transparent_1px),linear-gradient(180deg,rgba(1,75,170,0.042)_1px,transparent_1px)] bg-[size:52px_52px]" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-36 bg-[linear-gradient(180deg,rgba(238,245,255,0),#FFFFFF)]" />
+    <section className="relative isolate overflow-hidden bg-[linear-gradient(135deg,#EEF4FF_0%,#F0EEFF_40%,#E8F4FF_70%,#F8FAFC_100%)] px-4 py-10 sm:px-8 sm:py-14 lg:py-16">
 
       <div className="mx-auto flex min-h-[calc(86svh-6rem)] max-w-7xl items-center justify-center">
         <div className="mx-auto max-w-5xl text-center">
       
-          <h1 className="mx-auto mt-6 max-w-5xl text-[clamp(3rem,8vw,6.7rem)] leading-[0.9] font-black tracking-[-0.075em] text-balance text-[#014BAA]">
+          <h1 className="mx-auto mt-6 max-w-5xl text-[clamp(3rem,8vw,6.7rem)] leading-[0.9] font-black tracking-[-0.075em] text-balance text-[#0a0a0a]">
             Flexible plans built for growing teams
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-7 font-semibold text-[#40506D] sm:text-xl sm:leading-8">
@@ -443,7 +441,7 @@ function HeroSection() {
             </Button>
             <Button
               asChild
-              className="h-12 rounded-full border-[#BFD1FF] bg-white/76 px-7 text-sm font-extrabold text-[#014BAA] shadow-[0_18px_46px_-36px_rgba(1,75,170,0.5)] backdrop-blur-md transition hover:-translate-y-0.5 hover:bg-white"
+              className="h-12 rounded-full border-[#BFD1FF] bg-white/76 px-7 text-sm font-extrabold text-[#0a0a0a] shadow-[0_18px_46px_-36px_rgba(1,75,170,0.5)] backdrop-blur-md transition hover:-translate-y-0.5 hover:bg-white"
               variant="outline"
             >
               <Link href="/sign-up">Book a Demo</Link>
@@ -453,7 +451,7 @@ function HeroSection() {
           {/* <div className="mx-auto mt-8 grid max-w-4xl gap-3 sm:grid-cols-2 xl:grid-cols-4">
             {TRUST_POINTS.map((point) => (
               <div
-                className="flex min-h-12 items-center gap-3 rounded-[8px] border border-[#D8E6F8] bg-white/68 px-3 py-2 text-sm font-black text-[#014BAA] shadow-[0_18px_42px_-34px_rgba(1,75,170,0.45)] backdrop-blur-md"
+                className="flex min-h-12 items-center gap-3 rounded-[8px] border border-[#D8E6F8] bg-white/68 px-3 py-2 text-sm font-black text-[#0a0a0a] shadow-[0_18px_42px_-34px_rgba(1,75,170,0.45)] backdrop-blur-md"
                 key={point}
               >
                 <span className="grid size-7 shrink-0 place-items-center rounded-full bg-[#EAF2FF] text-[#1B3FFF]">
@@ -475,7 +473,6 @@ function PlansSection() {
       className="relative isolate overflow-hidden bg-white px-4 py-16 sm:px-8 lg:py-24"
       id="plans"
     >
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(180deg,#FFFFFF_0%,#F7FBFF_46%,#FFFFFF_100%)]" />
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-6 lg:grid-cols-[minmax(0,0.85fr)_minmax(260px,0.34fr)] lg:items-end">
           <div>
@@ -517,7 +514,7 @@ function PlanCard({ plan }: { plan: PlanCard }) {
               "inline-flex w-fit items-center gap-2 rounded-full px-3 py-1.5 text-xs font-black uppercase",
               plan.highlighted
                 ? "bg-[#FFF4E8] text-[#B35B00]"
-                : "bg-[#EEF5FF] text-[#014BAA]",
+                : "bg-[#EEF5FF] text-[#0a0a0a]",
             )}
           >
             <Sparkles className="size-3.5" />
@@ -552,7 +549,7 @@ function PlanCard({ plan }: { plan: PlanCard }) {
 
       <div className="mt-6">
         <div className="flex flex-wrap items-end gap-x-2 gap-y-1">
-          <span className="text-4xl leading-none font-black tracking-[-0.06em] text-[#014BAA]">
+          <span className="text-4xl leading-none font-black tracking-[-0.06em] text-[#0a0a0a]">
             {plan.price}
           </span>
           <span className="pb-1 text-sm font-black text-[#657084]">
@@ -565,7 +562,7 @@ function PlanCard({ plan }: { plan: PlanCard }) {
       </div>
 
       <div className="mt-5">
-        <p className="mb-2 text-xs font-black tracking-[0.16em] text-[#014BAA] uppercase">
+        <p className="mb-2 text-xs font-black tracking-[0.16em] text-[#0a0a0a] uppercase">
           Included
         </p>
         <div className="grid grid-cols-2 gap-2">
@@ -586,7 +583,7 @@ function PlanCard({ plan }: { plan: PlanCard }) {
       </div>
 
       <div className="mt-6 border-t border-[#E0E8F5] pt-5">
-        <p className="text-xs font-black tracking-[0.16em] text-[#014BAA] uppercase">
+        <p className="text-xs font-black tracking-[0.16em] text-[#0a0a0a] uppercase">
           Best for
         </p>
         <ul className="mt-3 grid gap-2">
@@ -609,7 +606,7 @@ function PlanCard({ plan }: { plan: PlanCard }) {
               <p className="text-xs font-bold text-[#657084]">
                 {plan.addOn.label}
               </p>
-              <p className="mt-1 text-lg font-black text-[#014BAA]">
+              <p className="mt-1 text-lg font-black text-[#0a0a0a]">
                 {plan.addOn.price}
               </p>
             </div>
@@ -640,10 +637,9 @@ function PlanCard({ plan }: { plan: PlanCard }) {
 function ComparisonSection() {
   return (
     <section
-      className="relative isolate overflow-hidden bg-[#F7FBFF] px-4 py-16 sm:px-8 lg:py-24"
+      className="relative isolate overflow-hidden bg-white px-4 py-16 sm:px-8 lg:py-24"
       id="compare"
     >
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(1,75,170,0.045)_1px,transparent_1px),linear-gradient(180deg,rgba(1,75,170,0.035)_1px,transparent_1px)] bg-[size:72px_72px]" />
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-6 lg:grid-cols-[minmax(0,0.75fr)_minmax(280px,0.38fr)] lg:items-end">
           <div>
@@ -672,7 +668,7 @@ function DesktopComparisonTable() {
         <caption className="sr-only">Auxify plan comparison</caption>
         <thead>
           <tr className="border-b border-[#D8E6F8] bg-[#EEF5FF]">
-            <th className="w-[28%] px-5 py-4 text-xs font-black tracking-[0.16em] text-[#014BAA] uppercase">
+            <th className="w-[28%] px-5 py-4 text-xs font-black tracking-[0.16em] text-[#0a0a0a] uppercase">
               Features
             </th>
             {COMPARISON_COLUMNS.map((column) => (
@@ -742,7 +738,7 @@ function MobileComparisonCards() {
           className="rounded-[8px] border border-[#D8E6F8] bg-white p-4 shadow-[0_22px_72px_-58px_rgba(1,75,170,0.58)]"
           key={column}
         >
-          <h3 className="text-2xl font-black tracking-[-0.045em] text-[#014BAA]">
+          <h3 className="text-2xl font-black tracking-[-0.045em] text-[#0a0a0a]">
             {column}
           </h3>
           <div className="mt-4 grid gap-2">
@@ -803,7 +799,7 @@ function AddOnsSection() {
                   <span className="block text-sm font-black text-[#314468]">
                     {addOn.label}
                   </span>
-                  <span className="mt-2 block text-3xl leading-none font-black tracking-[-0.05em] text-[#014BAA]">
+                  <span className="mt-2 block text-3xl leading-none font-black tracking-[-0.05em] text-[#0a0a0a]">
                     {addOn.price}
                   </span>
                 </span>
@@ -936,10 +932,9 @@ const COMPETITOR_ROWS: ReadonlyArray<{
 function CompetitorComparisonSection() {
   return (
     <section
-      className="relative isolate overflow-hidden bg-[#F7FBFF] px-4 py-16 sm:px-8 lg:py-24"
+      className="relative isolate overflow-hidden bg-white px-4 py-16 sm:px-8 lg:py-24"
       id="vs-others"
     >
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(1,75,170,0.045)_1px,transparent_1px),linear-gradient(180deg,rgba(1,75,170,0.035)_1px,transparent_1px)] bg-[size:72px_72px]" />
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-6 lg:grid-cols-[minmax(0,0.75fr)_minmax(280px,0.38fr)] lg:items-end">
           <div>
@@ -960,7 +955,7 @@ function CompetitorComparisonSection() {
               <span className="text-sm font-black text-[#314468]">Features</span>
             </div>
             <div className="flex items-center justify-center bg-[#E4EDFF] px-4 py-4 sm:px-6">
-              <span className="inline-flex items-center gap-2 text-sm font-black text-[#014BAA]">
+              <span className="inline-flex items-center gap-2 text-sm font-black text-[#0a0a0a]">
                 <LogoMark className="size-5" decorative />
                 Auxify
               </span>
@@ -996,7 +991,7 @@ function CompetitorComparisonSection() {
 function FaqSection() {
   return (
     <section
-      className="relative isolate overflow-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#F7FBFF_48%,#FFFFFF_100%)] px-4 py-16 sm:px-8 lg:py-24"
+      className="relative isolate overflow-hidden bg-white px-4 py-16 sm:px-8 lg:py-24"
       id="faq"
     >
       <div className="mx-auto max-w-7xl">
@@ -1015,13 +1010,13 @@ function FaqSection() {
               open={index === 0}
             >
               <summary className="flex cursor-pointer list-none items-center gap-4 px-4 py-4 text-left transition hover:bg-[#F8FBFF] sm:px-6 [&::-webkit-details-marker]:hidden">
-                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#EEF5FF] text-sm font-black text-[#014BAA]">
+                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#EEF5FF] text-sm font-black text-[#0a0a0a]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <span className="min-w-0 flex-1 text-base font-black text-[#07111D] sm:text-lg">
                   {faq.question}
                 </span>
-                <Plus className="size-5 shrink-0 text-[#014BAA] transition group-open:rotate-45" />
+                <Plus className="size-5 shrink-0 text-[#0a0a0a] transition group-open:rotate-45" />
               </summary>
               <div className="border-t border-[#E4ECF8] px-4 py-5 sm:px-6">
                 <p className="text-sm leading-7 font-medium text-[#52617C] sm:text-base">
@@ -1066,7 +1061,7 @@ function FinalCtaSection() {
         <div className="flex flex-col gap-3">
           <Button
             asChild
-            className="h-12 rounded-full bg-white px-7 text-sm font-extrabold text-[#014BAA] transition hover:-translate-y-0.5 hover:bg-[#EEF5FF]"
+            className="h-12 rounded-full bg-white px-7 text-sm font-extrabold text-[#0a0a0a] transition hover:-translate-y-0.5 hover:bg-[#EEF5FF]"
           >
             <Link href="/sign-in">
               Start Free Trial

@@ -21,7 +21,7 @@ const certifications = [
   {
     name: 'ISO 27701',
     subtitle: 'Privacy Information Management',
-    src: '/certified/27701.svg',
+    src: '/certified/ISO27701logo.png',
     href: '/certified/27701.pdf',
     width: 80,
     height: 80,
@@ -53,11 +53,11 @@ export default function Certified() {
       <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:py-20 lg:py-24">
         {/* Heading */}
         <div className="mb-14 text-center">
-          <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#014baa]/15 bg-[#014baa]/5 px-4 py-1.5">
-            <ShieldCheck className="h-4 w-4 text-[#014baa]" />
-            <span className="text-xs font-semibold text-[#014baa]">Certified & Compliant</span>
-          </div>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#014baa] sm:text-4xl lg:text-5xl">
+          {/* <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#014baa]/15 bg-[#014baa]/5 px-4 py-1.5">
+            <ShieldCheck className="h-4 w-4 text-[#0a0a0a]" />
+            <span className="text-xs font-semibold text-[#0a0a0a]">Certified & Compliant</span>
+          </div> */}
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#0a0a0a] sm:text-4xl lg:text-5xl">
             Built to pass your security review.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-[#4A5568]">
@@ -76,7 +76,7 @@ export default function Certified() {
               className="group relative flex flex-col items-center justify-center gap-4 rounded-2xl border border-[#E2E8F0] bg-white p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#014baa]/30 hover:shadow-xl hover:shadow-[#014baa]/8"
             >
               <div className="absolute top-3 right-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <ExternalLink className="h-4 w-4 text-[#014baa]" />
+                <ExternalLink className="h-4 w-4 text-[#0a0a0a]" />
               </div>
 
               <div className="transition-transform duration-300 group-hover:scale-110">
@@ -90,8 +90,8 @@ export default function Certified() {
               </div>
 
               <div className="text-center">
-                <p className="text-sm font-bold text-[#014baa]">{cert.name}</p>
-                <p className="mt-1 text-xs text-[#4A5568] transition-colors duration-300 group-hover:text-[#014baa]">
+                <p className="text-sm font-bold text-[#0a0a0a]">{cert.name}</p>
+                <p className="mt-1 text-xs text-[#4A5568] transition-colors duration-300 group-hover:text-[#0a0a0a]">
                   {cert.subtitle}
                 </p>
               </div>
@@ -112,7 +112,7 @@ export default function Certified() {
               className="group relative flex flex-col items-center justify-center gap-4 rounded-2xl border border-[#E2E8F0] bg-white p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#014baa]/30 hover:shadow-xl hover:shadow-[#014baa]/8"
             >
               <div className="absolute top-3 right-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <ExternalLink className="h-4 w-4 text-[#014baa]" />
+                <ExternalLink className="h-4 w-4 text-[#0a0a0a]" />
               </div>
 
               <div className="transition-transform duration-300 group-hover:scale-110">
@@ -126,8 +126,8 @@ export default function Certified() {
               </div>
 
               <div className="text-center">
-                <p className="text-sm font-bold text-[#014baa]">{cert.name}</p>
-                <p className="mt-1 text-xs text-[#4A5568] transition-colors duration-300 group-hover:text-[#014baa]">
+                <p className="text-sm font-bold text-[#0a0a0a]">{cert.name}</p>
+                <p className="mt-1 text-xs text-[#4A5568] transition-colors duration-300 group-hover:text-[#0a0a0a]">
                   {cert.subtitle}
                 </p>
               </div>

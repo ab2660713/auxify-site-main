@@ -54,7 +54,7 @@ export function SystemOrbit({ className }: { className?: string }) {
                   ease: "linear",
                 }}
               >
-                <span className="grid size-12 place-items-center rounded-2xl border border-[#DCE6F4] bg-white text-[#014BAA] shadow-[0_18px_44px_-30px_rgba(1,75,170,0.7)] sm:size-14">
+                <span className="grid size-12 place-items-center rounded-2xl border border-[#DCE6F4] bg-white text-[#0a0a0a] shadow-[0_18px_44px_-30px_rgba(1,75,170,0.7)] sm:size-14">
                   <Icon className="size-5 sm:size-6" />
                 </span>
                 <span className="rounded-full bg-white/80 px-2 py-0.5 text-[0.65rem] font-black tracking-[-0.01em] text-[#07111D] backdrop-blur sm:text-xs">
@@ -125,7 +125,7 @@ export function HandoffFlow() {
       </motion.div>
 
       <div className="flex flex-row items-center justify-center gap-2 lg:flex-col">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-[0.65rem] font-black tracking-[0.12em] text-[#014BAA] uppercase ring-1 ring-[#D8E6F8]">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-[0.65rem] font-black tracking-[0.12em] text-[#0a0a0a] uppercase ring-1 ring-[#D8E6F8]">
           <Sparkles className="size-3.5" />
           Escalate
         </span>
@@ -194,7 +194,7 @@ export function TrainingCore() {
           className="grid size-20 place-items-center rounded-full bg-white"
           transition={{ duration: 4, repeat: Infinity }}
         >
-          <Brain className="size-10 text-[#014BAA]" />
+          <Brain className="size-10 text-[#0a0a0a]" />
         </motion.span>
         <span className="mt-4 text-lg font-black tracking-[-0.03em]">
           Aligned AI employees

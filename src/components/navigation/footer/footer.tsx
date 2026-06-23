@@ -483,30 +483,30 @@ const siteConfig = {
       alt: 'ISO 27001 certified',
       src: '/certified/27001.png',
       documentHref: '/certified/27001.pdf',
-      className: 'object-contain',
+      className: 'object-contain scale-118',
     },
     {
       alt: 'ISO 42001 certified',
       src: '/certified/42001.png',
       documentHref: '/certified/42001.pdf',
-      className: 'object-cover',
+      className: 'object-contain scale-210',
     },
     {
       alt: 'ISO 27701 certified',
-      src: '/certified/27701.svg',
+      src: '/certified/ISO27701logo.png',
       documentHref: '/certified/27701.pdf',
-      className: 'object-cover',
+      className: 'object-contain scale-132',
     },
     {
       alt: 'DPDPA certified',
       src: '/certified/dpdpa.png',
       documentHref: '/certified/dpiit.pdf',
-      className: 'object-contain',
+      className: 'object-contain scale-135',
     },
     {
       alt: 'AICPA SOC for Service Organizations badge',
       src: '/certified/soc2.png',
-      className: 'object-contain',
+      className: 'object-contain scale-135',
     },
   ] satisfies readonly CertificationLogo[],
 };
@@ -625,19 +625,20 @@ export default function Footer({ copyrightYear }: FooterProps) {
             </a>
           </div>
 
-          <ul aria-label="Auxify certifications" className="flex flex-wrap items-center gap-3 sm:gap-4">
-            {siteConfig.certificationLogos.map(({ alt, src, documentHref, className }) => {
+          <ul aria-label="Auxify certifications" className="flex items-center gap-4 sm:gap-5">
+            {siteConfig.certificationLogos.map(({ alt, src, documentHref, className: logoClassName }) => {
               const logoImage = (
-                <Image
-                  alt={alt}
-                  className={cn('h-14 w-14 shrink-0 drop-shadow-sm sm:h-16 sm:w-16', className)}
-                  decoding="async"
-                  height={64}
-                  loading="lazy"
-                  sizes="(min-width: 640px) 64px, 56px"
-                  src={src}
-                  width={64}
-                />
+                <span className="relative block size-20 shrink-0 overflow-hidden rounded-full sm:size-22">
+                  <Image
+                    alt={alt}
+                    className={`absolute inset-0 h-full w-full object-contain p-2 ${logoClassName}`}
+                    decoding="async"
+                    fill
+                    loading="lazy"
+                    sizes="(min-width: 640px) 88px, 80px"
+                    src={src}
+                  />
+                </span>
               );
 
               if (!documentHref) {

@@ -85,13 +85,7 @@ export function Hero() {
             <div className="mx-auto flex w-full max-w-5xl flex-col items-center text-center">
 
               {/* Animated badge */}
-              <div className="hero-badge mb-6 inline-flex items-center gap-2.5 rounded-full border border-[#00C6A7]/30 bg-[#00C6A7]/10 px-4 py-2 backdrop-blur-sm" style={{ animation: 'pulse-glow 3s ease-in-out infinite, fadeInUp 0.6s ease-out both' }}>
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00C6A7] opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[#00C6A7]" />
-                </span>
-                <span className="text-xs font-semibold text-[#00C6A7] sm:text-sm">AI Employees — Live & Operating</span>
-              </div>
+           
 
               {/* Headline */}
               <h1 className="hero-heading max-w-5xl font-serif text-[clamp(2.6rem,8.5vw,6.5rem)] leading-[0.92] font-medium text-balance text-white italic">
@@ -128,7 +122,7 @@ export function Hero() {
 
               {/* Stats row */}
               <div className="hero-stats mt-12 flex flex-wrap items-center justify-center gap-6 sm:gap-10">
-                {stats.map((stat, i) => (
+                {/* {stats.map((stat, i) => (
                   <div key={stat.label} className="flex items-center gap-2.5">
                     <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/8 backdrop-blur-sm">
                       <stat.icon className="h-4 w-4 text-white/70" />
@@ -141,7 +135,7 @@ export function Hero() {
                       <div className="ml-4 hidden h-8 w-px bg-white/10 sm:ml-6 sm:block" />
                     )}
                   </div>
-                ))}
+                ))} */}
               </div>
 
               {/* Trust text */}

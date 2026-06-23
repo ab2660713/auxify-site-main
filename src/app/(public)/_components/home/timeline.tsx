@@ -66,7 +66,7 @@ export default function Timeline() {
         {/* Section heading */}
         <div className="mb-16 text-center">
           <p className="text-xs font-semibold tracking-widest text-[#4A5568] uppercase">Process</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#014baa] sm:text-4xl lg:text-5xl">
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#0a0a0a] sm:text-4xl lg:text-5xl">
             Our Product Development Lifecycle
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-[#4A5568]">
@@ -92,7 +92,7 @@ export default function Timeline() {
                 <div key={step.title} className="relative flex flex-col items-center text-center sm:px-4">
                   {/* Icon circle */}
                   <div className="relative z-10 mb-6 flex h-16 w-16 items-center justify-center rounded-full border-[2.5px] border-[#014baa] bg-white shadow-md transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-[#014baa]/20">
-                    <Icon className="h-6 w-6 text-[#014baa]" strokeWidth={1.8} />
+                    <Icon className="h-6 w-6 text-[#0a0a0a]" strokeWidth={1.8} />
                   </div>
 
                   {/* Content */}

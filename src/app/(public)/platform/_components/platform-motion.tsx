@@ -6,7 +6,7 @@ import { motion, useReducedMotion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 export const eyebrowClass =
-  "inline-flex items-center gap-2 rounded-full border border-[#BFD1FF] bg-white px-3.5 py-1.5 text-xs font-black tracking-[0.16em] text-[#014BAA] uppercase shadow-[0_18px_46px_-34px_rgba(1,75,170,0.6)]";
+  "inline-flex items-center gap-2 rounded-full border border-[#BFD1FF] bg-white px-3.5 py-1.5 text-xs font-black tracking-[0.16em] text-[#0a0a0a] uppercase shadow-[0_18px_46px_-34px_rgba(1,75,170,0.6)]";
 export const sectionTitleClass =
   "text-[clamp(2.1rem,4.6vw,3.5rem)] leading-[0.98] font-black tracking-[-0.05em] text-balance text-[#07111D]";
 export const sectionLeadClass =

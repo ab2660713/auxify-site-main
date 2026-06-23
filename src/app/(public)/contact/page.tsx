@@ -54,8 +54,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <section aria-labelledby="contact-heading" className="w-full border-b border-[#04101f]/10">
+    <div className="min-h-screen bg-white">
+      <section aria-labelledby="contact-heading" className="w-full">
         <div className="mx-auto grid w-full max-w-7xl gap-8 p-4 pt-28 pb-12 sm:pt-32 sm:pb-16 lg:grid-cols-[minmax(0,0.58fr)_minmax(0,0.42fr)] lg:items-end lg:gap-16 lg:pt-36 lg:pb-20">
           <Reveal delay={0.1} direction="up">
             <p className="font-mono text-[0.68rem] leading-4 font-medium text-[#0b5c7e] uppercase">Contact</p>
@@ -85,13 +85,13 @@ export default function ContactPage() {
 
       <section aria-label="Auxify contact options" className="w-full">
         <div className="mx-auto w-full max-w-7xl p-4 py-10 sm:py-12">
-          <div className="grid border border-[#04101f]/10 bg-white sm:grid-cols-3">
+          <div className="grid bg-white sm:grid-cols-3">
             <Reveal delay={0.05} className="h-full">
               <a
                 href={phoneHref}
-                className="group flex h-full min-h-32 items-start gap-4 border-[#04101f]/10 p-5 transition-colors hover:bg-[#f7fbff] sm:border-r sm:p-6"
+                className="group flex h-full min-h-32 items-start gap-4 p-5 transition-colors hover:bg-[#f7fbff] sm:p-6"
               >
-                <div className="flex size-10 shrink-0 items-center justify-center border border-[#04101f]/10 bg-[#eef8ff] text-[#014baa]">
+                <div className="flex size-10 shrink-0 items-center justify-center border border-[#04101f]/10 bg-[#eef8ff] text-[#0a0a0a]">
                   <Phone className="h-4 w-4" />
                 </div>
                 <div className="min-w-0">
@@ -105,9 +105,9 @@ export default function ContactPage() {
             <Reveal delay={0.1} className="h-full">
               <a
                 href={supportEmailHref}
-                className="group flex h-full min-h-32 items-start gap-4 border-t border-[#04101f]/10 p-5 transition-colors hover:bg-[#f7fbff] sm:border-t-0 sm:border-r sm:p-6"
+                className="group flex h-full min-h-32 items-start gap-4 p-5 transition-colors hover:bg-[#f7fbff] sm:p-6"
               >
-                <div className="flex size-10 shrink-0 items-center justify-center border border-[#04101f]/10 bg-[#eef8ff] text-[#014baa]">
+                <div className="flex size-10 shrink-0 items-center justify-center border border-[#04101f]/10 bg-[#eef8ff] text-[#0a0a0a]">
                   <Mail className="h-4 w-4" />
                 </div>
                 <div className="min-w-0">
@@ -119,8 +119,8 @@ export default function ContactPage() {
             </Reveal>
 
             <Reveal delay={0.15} className="h-full">
-              <div className="group flex h-full min-h-32 items-start gap-4 border-t border-[#04101f]/10 p-5 transition-colors hover:bg-[#f7fbff] sm:border-t-0 sm:p-6">
-                <div className="flex size-10 shrink-0 items-center justify-center border border-[#04101f]/10 bg-[#eef8ff] text-[#014baa]">
+              <div className="group flex h-full min-h-32 items-start gap-4 p-5 transition-colors hover:bg-[#f7fbff] sm:p-6">
+                <div className="flex size-10 shrink-0 items-center justify-center border border-[#04101f]/10 bg-[#eef8ff] text-[#0a0a0a]">
                   <MapPin className="h-4 w-4" />
                 </div>
                 <div className="min-w-0">
@@ -134,7 +134,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section aria-labelledby="contact-form-heading" className="w-full border-y border-[#04101f]/10 bg-[#fbfdff]">
+      <section aria-labelledby="contact-form-heading" className="w-full bg-white">
         <div className="mx-auto grid w-full max-w-7xl gap-8 p-4 py-12 sm:py-16 lg:grid-cols-[minmax(0,0.36fr)_minmax(0,1fr)] lg:gap-16 lg:py-20">
           <Reveal delay={0.05} direction="up">
             <p className="font-mono text-[0.68rem] leading-4 font-medium text-[#0b5c7e] uppercase">Request</p>
@@ -168,7 +168,7 @@ export default function ContactPage() {
             </h2>
             <p className="mt-5 text-sm leading-6 text-[#12304a]/72">{officeAddress}</p>
             <a
-              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#014baa] underline-offset-4 hover:underline"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#0a0a0a] underline-offset-4 hover:underline"
               href={mapLinkHref}
               rel="noopener noreferrer"
               target="_blank"

@@ -51,9 +51,9 @@ export function ContactForm({ className }: { className?: string }) {
 
   if (submitted) {
     return (
-      <div className={cn('border border-[#04101f]/10 bg-white p-8 text-center md:p-12', className)}>
+      <div className={cn(' bg-white p-8 text-center md:p-12', className)}>
         <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#eef8ff]">
-          <CheckCircle2 className="h-7 w-7 text-[#014baa]" />
+          <CheckCircle2 className="h-7 w-7 text-[#0a0a0a]" />
         </div>
         <h3 className="text-xl font-semibold tracking-tight text-[#04101f]">Thanks, {name.split(' ')[0]}.</h3>
         <p className="mx-auto mt-2 max-w-sm text-sm text-balance text-[#12304a]/72">
@@ -69,7 +69,7 @@ export function ContactForm({ className }: { className?: string }) {
             setLocation('');
             setDescription('');
           }}
-          className="mt-6 text-sm font-medium text-[#014baa] underline-offset-4 hover:underline"
+          className="mt-6 text-sm font-medium text-[#0a0a0a] underline-offset-4 hover:underline"
         >
           Send another message
         </button>
@@ -78,7 +78,7 @@ export function ContactForm({ className }: { className?: string }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={cn('border border-[#04101f]/10 bg-white p-6 md:p-8', className)}>
+    <form onSubmit={handleSubmit} className={cn(' bg-white p-6 md:p-8', className)}>
       <div className="mb-6 md:mb-8">
         <h3 className="text-lg font-semibold tracking-tight text-[#04101f]">Send Auxify a message</h3>
         <p className="mt-1 text-sm text-[#12304a]/72">Fill in the details and we&apos;ll reach out shortly.</p>
@@ -155,7 +155,7 @@ export function ContactForm({ className }: { className?: string }) {
                 onClick={fetchLocation}
                 disabled={locating}
                 aria-label="Detect my location"
-                className="absolute top-1/2 right-1 -translate-y-1/2 rounded-md p-2 text-[#12304a]/60 transition-colors hover:text-[#014baa] disabled:pointer-events-none"
+                className="absolute top-1/2 right-1 -translate-y-1/2 rounded-md p-2 text-[#12304a]/60 transition-colors hover:text-[#0a0a0a] disabled:pointer-events-none"
                 title="Detect my location"
               >
                 {locating ? <Loader2 className="h-4 w-4 animate-spin" /> : <MapPin className="h-4 w-4" />}

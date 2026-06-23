@@ -60,7 +60,7 @@ export const FAQSection = ({ title = 'Frequently asked questions', faqs = defaul
           <div className="lg:col-span-4">
             <div className="sticky top-24">
               <div className="mb-4 flex items-center gap-2">
-                <HelpCircle className="h-5 w-5 text-[#014baa]" />
+                <HelpCircle className="h-5 w-5 text-[#0a0a0a]" />
                 <p className="font-mono text-xs font-medium tracking-wide text-[#0b5c7e] uppercase">FAQ</p>
               </div>
               <h2 className="text-3xl font-semibold leading-tight text-gray-900 sm:text-4xl">

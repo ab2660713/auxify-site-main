@@ -731,7 +731,7 @@ function HeroSection() {
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-[#1B3FFF] opacity-60" />
               <span className="relative inline-flex size-2 rounded-full bg-[#1B3FFF]" />
             </span>
-            <span className="text-xs font-black tracking-[0.12em] text-[#014BAA] uppercase">
+            <span className="text-xs font-black tracking-[0.12em] text-[#0a0a0a] uppercase">
               AI-powered workforce
             </span>
           </div>
@@ -761,7 +761,7 @@ function HeroSection() {
             </Button>
             <Button
               asChild
-              className="h-13 rounded-full border-[#BFD1FF] bg-white/80 px-7 text-sm font-extrabold text-[#014BAA] shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
+              className="h-13 rounded-full border-[#BFD1FF] bg-white/80 px-7 text-sm font-extrabold text-[#0a0a0a] shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
               variant="outline"
             >
               <Link href="/sign-up">Book a Demo</Link>
@@ -776,7 +776,7 @@ function HeroSection() {
               { value: "100%", label: "Human control" },
             ].map((stat) => (
               <div key={stat.label}>
-                <p className="text-2xl font-black tracking-[-0.03em] text-[#014BAA] sm:text-3xl">
+                <p className="text-2xl font-black tracking-[-0.03em] text-[#0a0a0a] sm:text-3xl">
                   {stat.value}
                 </p>
                 <p className="mt-1 text-xs font-bold text-[#4A5568] sm:text-sm">
@@ -856,12 +856,12 @@ function WorkflowOrchestratorSection() {
             inView ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0",
           )}
         >
-          <p className="text-xs font-black tracking-[0.18em] text-[#014BAA] uppercase">
+          <p className="text-xs font-black tracking-[0.18em] text-[#0a0a0a] uppercase">
             Inside your workflows—not outside them
           </p>
           <h2 className="mt-4 text-[2.4rem] leading-[0.96] font-black tracking-[-0.05em] text-[#07111D] sm:text-[3.2rem] lg:text-[4rem]">
             Every interaction becomes{" "}
-            <span className="text-[#014BAA]">one connected workflow</span>
+            <span className="text-[#0a0a0a]">one connected workflow</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 font-medium text-[#4A5568] sm:text-lg">
             AI can qualify, answer, schedule, route, escalate, summarize, update
@@ -884,7 +884,7 @@ function WorkflowOrchestratorSection() {
                 className="group relative flex flex-col items-center gap-3 rounded-2xl border border-[#E2E8F0] bg-white p-5 transition hover:border-[#BFD1FF] hover:shadow-[0_16px_48px_-24px_rgba(1,75,170,0.15)]"
                 key={action.label}
               >
-                <div className="grid size-12 place-items-center rounded-xl bg-[#F0F5FF] text-[#014BAA] transition group-hover:bg-[#014BAA] group-hover:text-white">
+                <div className="grid size-12 place-items-center rounded-xl bg-[#F0F5FF] text-[#0a0a0a] transition group-hover:bg-[#014BAA] group-hover:text-white">
                   <AIcon className="size-6" />
                 </div>
                 <span className="text-sm font-black text-[#07111D]">
@@ -920,7 +920,7 @@ function WorkflowOrchestratorSection() {
                   <Bot className="size-12 text-white" />
                 </div>
               </div>
-              <p className="text-center text-lg font-black tracking-[-0.02em] text-[#014BAA]">
+              <p className="text-center text-lg font-black tracking-[-0.02em] text-[#0a0a0a]">
                 Auxify AI
               </p>
               <p className="text-center text-xs font-bold tracking-[0.1em] text-[#52617C] uppercase">
@@ -948,7 +948,7 @@ function WorkflowOrchestratorSection() {
           {/* Footer bar */}
           <div className="relative border-t border-[#D8E6F8] bg-white/70 px-6 py-4 backdrop-blur sm:px-8">
             <p className="text-sm leading-6 font-bold text-[#4A5568]">
-              <span className="text-[#014BAA]">Connected by design.</span>{" "}
+              <span className="text-[#0a0a0a]">Connected by design.</span>{" "}
               Agents read and write across every surface, so context never gets
               lost between channels, records, and teams.
             </p>
@@ -968,7 +968,7 @@ function WorkflowSurfaceCard({
 
   return (
     <div className="group flex min-h-14 items-center gap-3 rounded-xl border border-[#E2E8F0] bg-white px-4 py-3 transition hover:border-[#BFD1FF] hover:shadow-md">
-      <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-[#F0F5FF] text-[#014BAA] transition group-hover:bg-[#014BAA] group-hover:text-white">
+      <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-[#F0F5FF] text-[#0a0a0a] transition group-hover:bg-[#014BAA] group-hover:text-white">
         <Icon className="size-5" />
       </span>
       <span className="text-sm font-bold text-[#07111D]">{surface.label}</span>
@@ -986,11 +986,11 @@ function AgentShowcaseSection() {
       <div className={cn("mx-auto max-w-7xl py-20 lg:py-28", pageX)}>
         {/* Section header */}
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-black tracking-[0.18em] text-[#014BAA] uppercase">
+          <p className="text-xs font-black tracking-[0.18em] text-[#0a0a0a] uppercase">
             A specialist for every function
           </p>
           <h2 className="mt-4 text-[2.4rem] leading-[0.96] font-black tracking-[-0.05em] text-[#07111D] sm:text-[3.2rem] lg:text-[4rem]">
-            Seven agents. <span className="text-[#014BAA]">One platform.</span>
+            Seven agents. <span className="text-[#0a0a0a]">One platform.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 font-medium text-[#4A5568] sm:text-lg">
             Each agent is purpose-built for a specific job—deployed inside your
@@ -1239,7 +1239,7 @@ function FinalCtaSection() {
               className="flex items-center justify-center gap-2 rounded-xl border border-[#E2E8F0] bg-[#F7FBFF] p-4"
               key={feat.label}
             >
-              <feat.icon className="size-5 text-[#014BAA]" />
+              <feat.icon className="size-5 text-[#0a0a0a]" />
               <span className="text-sm font-bold text-[#07111D]">
                 {feat.label}
               </span>
@@ -1260,7 +1260,7 @@ function FinalCtaSection() {
           </Button>
           <Button
             asChild
-            className="h-14 rounded-full border-[#D7E0EF] bg-white px-8 text-base font-extrabold text-[#014BAA] shadow-sm transition hover:-translate-y-0.5 hover:bg-[#F7FBFF]"
+            className="h-14 rounded-full border-[#D7E0EF] bg-white px-8 text-base font-extrabold text-[#0a0a0a] shadow-sm transition hover:-translate-y-0.5 hover:bg-[#F7FBFF]"
             variant="outline"
           >
             <Link href="/platform">

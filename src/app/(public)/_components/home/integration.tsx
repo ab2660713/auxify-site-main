@@ -105,14 +105,14 @@ export const IntegrationCarousel = ({
       <div className="mx-auto w-full max-w-7xl px-4">
         {/* Heading */}
         <div className="mb-14 text-center">
-          <p className="mb-4 inline-block rounded-full border border-[#1B3FFF]/20 bg-[#1B3FFF]/5 px-4 py-1.5 text-xs font-semibold text-[#1B3FFF]">
+          {/* <p className="mb-4 inline-block rounded-full border border-[#1B3FFF]/20 bg-[#1B3FFF]/5 px-4 py-1.5 text-xs font-semibold text-[#1B3FFF]">
             Integrations
-          </p>
-          <h2 className="text-3xl font-bold tracking-tight text-[#014baa] sm:text-4xl lg:text-5xl">
-            Seamless Integrations
+          </p> */}
+          <h2 className="text-3xl font-bold tracking-tight text-[#0a0a0a] sm:text-4xl lg:text-5xl">
+            Comparitble 
             <br />
-            with Your{' '}
-            <span className="text-[#1B3FFF]">Tech Stack</span>
+            with Auxify{' '}
+            {/* <span className="text-[#1B3FFF]">Tech Stack</span> */}
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-[#4A5568]">
             Connect Auxify with the tools you already use. Our platform integrates with 50+ apps across CRM, email, marketplaces, and more.
@@ -180,13 +180,7 @@ export const IntegrationCarousel = ({
       {/* CTA */}
       <div className="mx-auto w-full max-w-7xl px-4">
         <div className="mt-12 text-center">
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 rounded-full bg-[#1B3FFF] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#1B3FFF]/25 transition-all hover:-translate-y-0.5 hover:bg-[#3B5EFF] hover:shadow-xl hover:shadow-[#1B3FFF]/30"
-          >
-            View All Integrations
-            <ArrowRight className="h-4 w-4" />
-          </a>
+       
         </div>
       </div>
     </section>
