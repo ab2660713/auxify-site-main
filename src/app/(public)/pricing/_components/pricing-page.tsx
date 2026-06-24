@@ -434,7 +434,7 @@ function HeroSection() {
               asChild
               className="h-12 rounded-full bg-[linear-gradient(135deg,#014BAA,#1B3FFF_58%,#3B5EFF)] px-7 text-sm font-extrabold text-white shadow-[0_22px_54px_-30px_rgba(1,75,170,0.92)] transition hover:-translate-y-0.5"
             >
-              <Link href="/sign-in">
+              <Link href="https://app.auxify.live/sign-up">
                 Start Free Trial
                 <ArrowRight className="size-4" />
               </Link>
@@ -444,7 +444,7 @@ function HeroSection() {
               className="h-12 rounded-full border-[#BFD1FF] bg-white/76 px-7 text-sm font-extrabold text-[#0a0a0a] shadow-[0_18px_46px_-36px_rgba(1,75,170,0.5)] backdrop-blur-md transition hover:-translate-y-0.5 hover:bg-white"
               variant="outline"
             >
-              <Link href="/sign-up">Book a Demo</Link>
+              <Link href="/contact">Book a Demo</Link>
             </Button>
           </div>
 
@@ -1063,7 +1063,7 @@ function FinalCtaSection() {
             asChild
             className="h-12 rounded-full bg-white px-7 text-sm font-extrabold text-[#0a0a0a] transition hover:-translate-y-0.5 hover:bg-[#EEF5FF]"
           >
-            <Link href="/sign-in">
+            <Link href="https://app.auxify.live/sign-up">
               Start Free Trial
               <ArrowRight className="size-4" />
             </Link>
@@ -1073,7 +1073,7 @@ function FinalCtaSection() {
             className="h-12 rounded-full border-white/28 bg-white/10 px-7 text-sm font-extrabold text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:bg-white/16"
             variant="outline"
           >
-            <Link href="/sign-up">Book a Demo</Link>
+            <Link href="/contact">Book a Demo</Link>
           </Button>
         </div>
       </div>

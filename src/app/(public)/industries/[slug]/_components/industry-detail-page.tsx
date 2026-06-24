@@ -125,7 +125,7 @@ function HeroSection({ industry }: { industry: Industry }) {
                   background: `linear-gradient(135deg, ${industry.accent}, ${industry.accentSoft})`,
                 }}
               >
-                <Link href="/sign-up">
+                <Link href="https://app.auxify.live/sign-up">
                   {industry.cta}
                   <ArrowRight className="size-4" />
                 </Link>
@@ -407,7 +407,7 @@ function CtaSection({ industry }: { industry: Industry }) {
               className="h-12 rounded-full bg-white px-6 text-sm font-extrabold text-[#0a0a0a] shadow-[0_24px_56px_-28px_rgba(0,0,0,0.5)] transition hover:-translate-y-0.5"
               style={{ color: industry.accent }}
             >
-              <Link href="/sign-up">
+              <Link href="https://app.auxify.live/sign-up">
                 {industry.cta}
                 <ArrowRight className="size-4" />
               </Link>

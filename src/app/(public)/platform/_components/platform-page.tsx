@@ -87,7 +87,7 @@ function HeroSection() {
                   asChild
                   className="h-12 rounded-full bg-[#1B3FFF] px-6 text-sm font-extrabold text-white shadow-lg shadow-[#1B3FFF]/25 transition hover:-translate-y-0.5 hover:bg-[#3B5EFF]"
                 >
-                  <Link href="/sign-up">
+                  <Link href="/contact">
                     Book a Demo
                     <ArrowRight className="size-4" />
                   </Link>
@@ -1048,7 +1048,7 @@ function FinalCtaSection() {
             asChild
             className="h-12 rounded-full bg-white px-7 text-sm font-extrabold text-[#0a0a0a] transition hover:-translate-y-0.5 hover:bg-[#EEF5FF]"
           >
-            <Link href="/sign-up">
+            <Link href="https://app.auxify.live/sign-up">
               Start Free Trial
               <ArrowRight className="size-4" />
             </Link>

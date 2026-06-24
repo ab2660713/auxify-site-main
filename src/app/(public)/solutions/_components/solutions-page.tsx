@@ -94,7 +94,7 @@ function HeroSection() {
                   className="h-12 rounded-full border-[#E2E8F0] bg-white px-6 text-sm font-extrabold text-[#07111D] shadow-sm transition hover:-translate-y-0.5 hover:bg-[#F8FAFC]"
                   variant="outline"
                 >
-                  <Link href="/sign-up">Book a Demo</Link>
+                  <Link href="/contact">Book a Demo</Link>
                 </Button>
               </div>
             </motion.div>
@@ -276,7 +276,7 @@ function TeamSolutionsSection() {
                     className="mt-8 h-12 rounded-full px-6 text-sm font-extrabold text-white shadow-[0_20px_48px_-30px_rgba(1,75,170,0.8)] transition hover:-translate-y-0.5"
                     style={{ backgroundColor: team.accent }}
                   >
-                    <Link href="/sign-up">
+                    <Link href="https://app.auxify.live/sign-up">
                       {team.cta}
                       <ArrowRight className="size-4" />
                     </Link>
@@ -342,7 +342,7 @@ function FinalCtaSection() {
             asChild
             className="h-12 rounded-full bg-white px-7 text-sm font-extrabold text-[#0a0a0a] transition hover:-translate-y-0.5 hover:bg-[#EEF5FF]"
           >
-            <Link href="/sign-up">
+            <Link href="https://app.auxify.live/sign-up">
               Start Free Trial
               <ArrowRight className="size-4" />
             </Link>

@@ -79,7 +79,7 @@ export function AboutPage() {
               </a>
               <Link
                 className="inline-flex h-12 items-center justify-center rounded-full border border-[#E2E8F0] bg-white px-7 text-sm font-extrabold text-[#0a0a0a] shadow-sm transition hover:-translate-y-0.5 hover:bg-[#F7F8FC]"
-                href="/sign-up"
+                href="/contact"
               >
                 Book a Demo
               </Link>
@@ -207,7 +207,7 @@ export function AboutPage() {
           <div className="flex flex-col gap-3">
             <Link
               className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-white px-7 text-sm font-extrabold text-[#0a0a0a] transition hover:-translate-y-0.5 hover:bg-[#EEF5FF]"
-              href="/sign-up"
+              href="/contact"
             >
               Book a Demo
               <ArrowRight className="size-4" />

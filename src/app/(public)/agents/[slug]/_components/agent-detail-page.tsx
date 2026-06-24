@@ -138,7 +138,7 @@ function HeroSection({ agent }: { agent: AiAgent }) {
                   className="h-12 rounded-full px-6 text-sm font-extrabold text-white shadow-[0_24px_56px_-28px_rgba(1,75,170,0.95)] transition hover:-translate-y-0.5"
                   style={{ backgroundColor: accent }}
                 >
-                  <Link href="/sign-up">
+                  <Link href="/contact">
                     Book a Demo
                     <ArrowRight className="size-4" />
                   </Link>
@@ -364,7 +364,7 @@ function CtaSection({ agent }: { agent: AiAgent }) {
               asChild
               className="h-12 rounded-full bg-white px-7 text-sm font-extrabold text-[#07111D] shadow-lg transition hover:-translate-y-0.5"
             >
-              <Link href="/sign-up">
+              <Link href="/contact">
                 Book a Demo
                 <ArrowUpRight className="size-4" />
               </Link>

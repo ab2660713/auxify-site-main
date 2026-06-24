@@ -90,7 +90,7 @@ function HeroSection() {
                   className="h-12 rounded-full border-[#E2E8F0] bg-white px-6 text-sm font-extrabold text-[#07111D] shadow-sm transition hover:-translate-y-0.5 hover:bg-[#F8FAFC]"
                   variant="outline"
                 >
-                  <Link href="/sign-up">Book a Demo</Link>
+                  <Link href="/contact">Book a Demo</Link>
                 </Button>
               </div>
 
@@ -413,7 +413,7 @@ function IndustrySections() {
                       className="h-11 rounded-full border-[#D7E0EF] bg-white px-6 text-sm font-extrabold text-[#0a0a0a] transition hover:-translate-y-0.5 hover:bg-[#F7F8FC]"
                       variant="outline"
                     >
-                      <Link href="/sign-up">{industry.cta}</Link>
+                      <Link href="https://app.auxify.live/sign-up">{industry.cta}</Link>
                     </Button>
                   </div>
                 </div>
@@ -459,7 +459,7 @@ function FinalCtaSection() {
             asChild
             className="h-12 rounded-full bg-white px-7 text-sm font-extrabold text-[#0a0a0a] transition hover:-translate-y-0.5 hover:bg-[#EEF5FF]"
           >
-            <Link href="/sign-up">
+            <Link href="https://app.auxify.live/sign-up">
               Start Free Trial
               <ArrowRight className="size-4" />
             </Link>

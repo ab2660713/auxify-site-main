@@ -764,7 +764,7 @@ function HeroSection() {
               className="h-13 rounded-full border-[#BFD1FF] bg-white/80 px-7 text-sm font-extrabold text-[#0a0a0a] shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
               variant="outline"
             >
-              <Link href="/sign-up">Book a Demo</Link>
+              <Link href="/contact">Book a Demo</Link>
             </Button>
           </div>
 
@@ -1110,7 +1110,7 @@ function AgentShowcaseCard({
               className="h-12 rounded-full px-6 text-sm font-extrabold text-white transition hover:-translate-y-0.5"
               style={{ backgroundColor: agent.accentColor }}
             >
-              <Link href="/sign-up">
+              <Link href="https://app.auxify.live/sign-up">
                 {agent.cta}
                 <ArrowRight className="size-4" />
               </Link>
@@ -1253,7 +1253,7 @@ function FinalCtaSection() {
             asChild
             className="h-14 rounded-full bg-gradient-to-r from-[#014BAA] to-[#1B3FFF] px-8 text-base font-extrabold text-white shadow-[0_20px_56px_-28px_rgba(1,75,170,0.8)] transition hover:-translate-y-0.5"
           >
-            <Link href="/sign-up">
+            <Link href="/contact">
               Book a Demo
               <ArrowRight className="size-5" />
             </Link>
