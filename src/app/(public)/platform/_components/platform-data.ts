@@ -356,6 +356,7 @@ export const agents: readonly AiAgent[] = [
     visual: "support",
     capabilities: [
       "Answer FAQs instantly",
+      "Inbound call handling",
       "Retrieve knowledge-base answers",
       "Guide customers through common requests",
       "Capture issue details",
@@ -480,24 +481,26 @@ export const agents: readonly AiAgent[] = [
     title: "Receptionist / Front Desk AI Employee",
     tagline: "Always available for first-touch conversations",
     description:
-      "Auxify Receptionist AI handles front-line communication automatically and routes customers correctly—welcoming new inquiries, scheduling appointments, and handling after-hours requests.",
+      "Auxify Receptionist AI handles front-line communication automatically and routes customers correctly—answering calls, welcoming inquiries, scheduling appointments, and managing after-hours requests across all channels.",
     icon: Headset,
     accent: "#014BAA",
     visual: "receptionist",
     capabilities: [
-      "Welcome new inquiries",
-      "Answer basic questions",
-      "Route to departments",
-      "Schedule appointments",
-      "Collect customer details",
-      "Trigger reminders",
-      "Handle after-hours inquiries",
+      "Answer inbound calls automatically",
+      "Greet and qualify walk-in inquiries",
+      "Route calls to the right department",
+      "Schedule and confirm appointments",
+      "Collect visitor and customer details",
+      "Send appointment reminders via WhatsApp/SMS",
+      "Handle after-hours calls and messages",
+      "Transfer to human when requested",
+      "Log all interactions to CRM",
     ],
     outcomes: [
+      "Zero missed calls",
       "Faster first response",
       "Better routing accuracy",
-      "Fewer missed inquiries",
-      "Stronger customer experience",
+      "24/7 availability without extra staff",
     ],
   },
 ] as const;
@@ -528,6 +531,8 @@ export const agentVoiceResponses: Record<string, Record<string, string>> = {
   support: {
     "Answer FAQs instantly":
       "I handle your most common questions in seconds — return policies, pricing, hours, shipping — using your actual business knowledge so answers are always accurate.",
+    "Inbound call handling":
+      "I answer inbound support calls automatically — greet the customer, understand their issue, provide instant help for common problems, and route complex cases to your team with full context.",
     "Retrieve knowledge-base answers":
       "I search through your entire knowledge base — help articles, product docs, SOPs — to find the exact answer customers need, summarized clearly.",
     "Guide customers through common requests":
@@ -614,20 +619,24 @@ export const agentVoiceResponses: Record<string, Record<string, string>> = {
       "All collected data flows directly into your analytics and reporting dashboards — no manual exports or copy-pasting needed.",
   },
   receptionist: {
-    "Welcome new inquiries":
-      "The moment someone reaches out — by phone, message, or chat — I greet them warmly, acknowledge their inquiry, and start helping immediately. No hold music, no waiting.",
-    "Answer basic questions":
-      "Business hours, location, services offered, pricing ranges — I handle these instantly so your team doesn't get interrupted for simple information requests.",
-    "Route to departments":
+    "Answer inbound calls automatically":
+      "I pick up every call instantly — no hold music, no missed rings. I greet the caller, understand their request, and either resolve it or route them to the right person with full context.",
+    "Greet and qualify walk-in inquiries":
+      "The moment someone reaches out — by phone, message, or chat — I greet them, ask what they need, and qualify whether they need sales, support, or scheduling.",
+    "Route calls to the right department":
       "Based on what the customer needs, I connect them to the right department — sales for new business, support for issues, billing for payments — with context attached.",
-    "Schedule appointments":
-      "I check availability across your team's calendars and book appointments in real-time — confirming the slot with both the customer and the team member.",
-    "Collect customer details":
+    "Schedule and confirm appointments":
+      "I check availability across your team's calendars and book appointments in real-time — confirming the slot with both the customer and the team member instantly.",
+    "Collect visitor and customer details":
       "Before routing or scheduling, I gather everything needed — name, contact info, reason for calling, any relevant account details — so the receiving team is fully prepared.",
-    "Trigger reminders":
-      "After booking, I send confirmation messages and reminder notifications to both the customer and your team — reducing no-shows and confusion.",
-    "Handle after-hours inquiries":
-      "When your team is offline, I'm still active — answering questions, capturing leads, and scheduling callbacks for the next business day.",
+    "Send appointment reminders via WhatsApp/SMS":
+      "After booking, I send confirmation and reminder messages via WhatsApp or SMS to both the customer and your team — reducing no-shows significantly.",
+    "Handle after-hours calls and messages":
+      "When your team is offline, I'm still active — answering calls, capturing leads, taking messages, and scheduling callbacks for the next business day.",
+    "Transfer to human when requested":
+      "If the caller asks for a real person or the issue is complex, I transfer them immediately to an available team member — with a full summary of the conversation so far.",
+    "Log all interactions to CRM":
+      "Every call, message, and appointment gets automatically logged in your CRM — no manual data entry, complete interaction history for every contact.",
   },
 };
 

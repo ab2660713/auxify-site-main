@@ -49,13 +49,12 @@ function HeroSection() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative w-full overflow-hidden bg-white">
-      <div className="mx-auto w-full max-w-[1680px] p-3 sm:p-4">
-        <div
-          className="relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[linear-gradient(135deg,#EEF4FF_0%,#F0EEFF_40%,#E8F4FF_70%,#F8FAFC_100%)]"
-          id="top"
-        >
-          <div className="relative grid items-center gap-10 px-5 py-14 sm:px-10 lg:grid-cols-[1.02fr_0.98fr] lg:py-20">
+    <section
+      className="relative w-full overflow-hidden bg-[linear-gradient(135deg,#EEF4FF_0%,#F0EEFF_40%,#E8F4FF_70%,#F8FAFC_100%)]"
+      id="top"
+    >
+      <div className="mx-auto w-full max-w-[1680px]">
+        <div className="relative grid items-center gap-10 px-5 py-14 sm:px-10 lg:grid-cols-[1.02fr_0.98fr] lg:py-20">
             {/* Copy */}
             <motion.div
               className="text-center lg:text-left"
@@ -101,7 +100,6 @@ function HeroSection() {
 
             {/* Convergence visual */}
             <motion.div
-              className="rounded-[26px] border border-[#E2E8F0] bg-white p-4 shadow-lg sm:p-6"
               initial={reduce ? false : { opacity: 0, scale: 0.92 }}
               transition={{
                 duration: 0.8,
@@ -112,12 +110,11 @@ function HeroSection() {
               whileInView={reduce ? undefined : { opacity: 1, scale: 1 }}
             >
               <ConvergenceMap />
-              <p className="mt-5 border-l-2 border-[#1B3FFF] pl-4 text-sm leading-6 font-bold text-[#07111D]">
+              <p className="mt-5  pl-4 text-sm leading-6 font-bold text-[#07111D]">
                 Every team works differently. Auxify connects them all.
               </p>
             </motion.div>
           </div>
-        </div>
       </div>
     </section>
   );

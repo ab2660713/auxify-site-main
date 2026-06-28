@@ -127,21 +127,12 @@ export default function Industries() {
                       : 'border-[#E2E8F0] bg-white/80 shadow-lg shadow-gray-200/50'
                   }`}
                 >
-                  <div className="mb-5 flex items-start justify-between">
+                  <div className="mb-5">
                     <div
                       className={`flex h-11 w-11 items-center justify-center rounded-xl ${industry.bg}`}
                     >
                       <industry.icon className="h-5 w-5" style={{ color: industry.accent }} />
                     </div>
-                    <span
-                      className="flex h-8 w-8 items-center justify-center rounded-full transition-all duration-300"
-                      style={{
-                        backgroundColor: isActive ? `${industry.accent}15` : 'transparent',
-                        color: industry.accent,
-                      }}
-                    >
-                      <ArrowRight className="h-4 w-4" />
-                    </span>
                   </div>
 
                   <h3 className="text-base font-bold text-[#0a0a0a]">{industry.title}</h3>

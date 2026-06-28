@@ -25,11 +25,10 @@ export function SystemOrbit({ className }: { className?: string }) {
     >
       <div className="pointer-events-none absolute inset-[20%] rounded-full border border-[#D8E6F8]" />
 
-      {/* Orbiting icons — container rotates, each icon counter-rotates to stay upright */}
+      {/* Orbiting icons — each icon positioned individually and counter-rotates to stay upright */}
       <motion.div
         animate={reduce ? undefined : { rotate: 360 }}
-        className="absolute inset-0"
-        style={{ willChange: "transform" }}
+        className="absolute inset-0 transform-gpu"
         transition={{ duration: 48, repeat: Infinity, ease: "linear" }}
       >
         {orbitChannels.map((channel, index) => {
@@ -40,14 +39,13 @@ export function SystemOrbit({ className }: { className?: string }) {
           const y = 50 + radius * Math.sin(angle);
           return (
             <div
-              className="absolute -translate-x-1/2 -translate-y-1/2"
+              className="absolute -translate-x-1/2 -translate-y-1/2 transform-gpu"
               key={channel.label}
               style={{ left: `${x}%`, top: `${y}%` }}
             >
               <motion.div
                 animate={reduce ? undefined : { rotate: -360 }}
-                className="flex flex-col items-center gap-1.5"
-                style={{ willChange: "transform" }}
+                className="flex flex-col items-center gap-1.5 transform-gpu"
                 transition={{
                   duration: 48,
                   repeat: Infinity,
@@ -55,7 +53,7 @@ export function SystemOrbit({ className }: { className?: string }) {
                 }}
               >
                 <span className="grid size-12 place-items-center rounded-2xl border border-[#DCE6F4] bg-white text-[#0a0a0a] shadow-[0_18px_44px_-30px_rgba(1,75,170,0.7)] sm:size-14">
-                  <Icon className="size-5 sm:size-6" />
+                  <Icon className="size-5 sm:size-6" strokeWidth={1.5} />
                 </span>
                 <span className="rounded-full bg-white/80 px-2 py-0.5 text-[0.65rem] font-black tracking-[-0.01em] text-[#07111D] backdrop-blur sm:text-xs">
                   {channel.label}
@@ -66,13 +64,8 @@ export function SystemOrbit({ className }: { className?: string }) {
         })}
       </motion.div>
 
-      {/* Core */}
+      {/* Core — fixed position, no animation */}
       <div className="absolute top-1/2 left-1/2 grid size-28 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-[#014BAA] bg-[#014BAA] text-center text-white shadow-[0_30px_80px_-40px_rgba(1,75,170,0.9)] sm:size-32">
-        <motion.span
-          animate={reduce ? undefined : { scale: [1, 1.5], opacity: [0.4, 0] }}
-          className="pointer-events-none absolute inset-0 rounded-full bg-[#1B3FFF]"
-          transition={{ duration: 3.5, repeat: Infinity, ease: "easeOut" }}
-        />
         <span className="relative grid justify-items-center">
           <span className="grid size-12 place-items-center rounded-full bg-white sm:size-14">
             <LogoMark className="size-8 sm:size-9" decorative />

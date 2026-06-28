@@ -46,7 +46,7 @@ type PlanCard = {
   };
   cta: {
     label: string;
-    href: "/sign-in" | "/sign-up" | "/contact";
+    href: string;
   };
 };
 
@@ -64,7 +64,7 @@ const PLAN_CARDS: readonly PlanCard[] = [
     price: "₹0",
     cadence: "/ 15 Days",
     description:
-      "Perfect for exploring Auxify before onboarding your team. Test workflows, manage conversations, and experience AI-powered customer operations in one platform.",
+      "Explore Auxify free for 15 days. Test AI workflows, conversations, and customer operations.",
     icon: MessageCircle,
     accentClassName: "bg-[#EAFBF4] text-[#008756] ring-[#BDEFD9]",
     meterClassName: "bg-[#008756]",
@@ -88,7 +88,7 @@ const PLAN_CARDS: readonly PlanCard[] = [
     ],
     cta: {
       label: "Start Free Trial",
-      href: "/sign-in",
+      href: "https://app.auxify.live/sign-up",
     },
   },
   {
@@ -98,7 +98,7 @@ const PLAN_CARDS: readonly PlanCard[] = [
     price: "₹5,999",
     cadence: "/ month",
     description:
-      "A focused starter pack for startups, small sales teams, and early support teams that need CRM, conversations, AI follow-up, campaigns, and team guidance.",
+      "For startups and small teams that need CRM, AI follow-up, campaigns, and conversations.",
     icon: CircleDollarSign,
     accentClassName: "bg-[#EEF5FF] text-[#0a0a0a] ring-[#BFD1FF]",
     meterClassName: "bg-[#014BAA]",
@@ -122,7 +122,7 @@ const PLAN_CARDS: readonly PlanCard[] = [
     },
     cta: {
       label: "Get Started",
-      href: "/sign-up",
+      href: "https://app.auxify.live/sign-up",
     },
   },
   {
@@ -132,7 +132,7 @@ const PLAN_CARDS: readonly PlanCard[] = [
     price: "₹10,999",
     cadence: "/ month",
     description:
-      "Designed for growing businesses managing higher customer volume across sales, support, campaigns, and AI workflows. Scale faster with more automation capacity and team access.",
+      "For growing teams scaling sales, support, and automation with higher capacity.",
     icon: Zap,
     accentClassName: "bg-[#FFF4E8] text-[#D97800] ring-[#FFD7A8]",
     meterClassName: "bg-[#D97800]",
@@ -160,7 +160,7 @@ const PLAN_CARDS: readonly PlanCard[] = [
     },
     cta: {
       label: "Choose Professional",
-      href: "/sign-up",
+      href: "https://app.auxify.live/sign-up",
     },
   },
   {
@@ -169,7 +169,7 @@ const PLAN_CARDS: readonly PlanCard[] = [
     price: "Custom",
     cadence: "Pricing",
     description:
-      "Purpose-built for larger organizations with custom workflows, larger teams, advanced AI deployment, enterprise compliance needs, and flexible infrastructure.",
+      "Custom AI deployment for large teams with advanced workflows and enterprise compliance.",
     icon: Rocket,
     accentClassName: "bg-[#F1EDFF] text-[#6D4AFF] ring-[#D9D0FF]",
     meterClassName: "bg-[#6D4AFF]",

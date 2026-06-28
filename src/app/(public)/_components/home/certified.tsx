@@ -23,8 +23,8 @@ const certifications = [
     subtitle: 'Privacy Information Management',
     src: '/certified/ISO27701logo.png',
     href: '/certified/27701.pdf',
-    width: 80,
-    height: 80,
+    width: 160,
+    height: 140,
   },
   {
     name: 'SOC 2',

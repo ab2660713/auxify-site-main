@@ -80,18 +80,18 @@ export function ConvergenceMap() {
 
       <div className="relative grid gap-7">
         {/* Teams in */}
-        <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           {teamInputs.map((team) => {
             const Icon = team.icon;
             return (
               <div
-                className="flex min-h-15 items-center gap-2.5 rounded-2xl border border-[#DCE6F4] bg-white/90 px-3 py-2.5 shadow-[0_18px_46px_-40px_rgba(1,75,170,0.6)] backdrop-blur"
+                className="flex min-h-16 items-center gap-3 rounded-2xl border border-[#DCE6F4] bg-white px-4 py-3 shadow-md"
                 key={team.label}
               >
-                <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-[#EAF0FF] text-[#1B3FFF]">
-                  <Icon className="size-4.5" />
+                <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-[#EAF0FF] text-[#1B3FFF]">
+                  <Icon className="size-5" />
                 </span>
-                <span className="min-w-0 truncate text-sm font-black tracking-[-0.02em] text-[#07111D]">
+                <span className="min-w-0 truncate text-sm font-bold text-[#07111D]">
                   {team.label}
                 </span>
               </div>
@@ -99,16 +99,9 @@ export function ConvergenceMap() {
           })}
         </div>
 
-        {/* AI core */}
+        {/* AI core — fixed, no animation */}
         <div className="flex justify-center">
-          <div className="relative grid size-30 place-items-center rounded-full border border-[#014BAA] bg-[linear-gradient(150deg,#06224F,#014BAA)] text-center text-white shadow-[0_34px_90px_-44px_rgba(1,75,170,0.95)] sm:size-34">
-            <motion.span
-              animate={
-                reduce ? undefined : { scale: [1, 1.55], opacity: [0.4, 0] }
-              }
-              className="pointer-events-none absolute inset-0 rounded-full bg-[#1B3FFF]"
-              transition={{ duration: 3.2, repeat: Infinity, ease: "easeOut" }}
-            />
+          <div className="relative grid size-30 place-items-center rounded-full border border-[#014BAA] bg-[#014BAA] text-center text-white shadow-[0_34px_90px_-44px_rgba(1,75,170,0.95)] sm:size-34">
             <span className="relative grid justify-items-center">
               <span className="grid size-13 place-items-center rounded-full bg-white shadow-[0_18px_44px_-28px_rgba(1,35,84,0.8)] sm:size-15">
                 <LogoMark className="size-8 sm:size-9" decorative />
@@ -121,18 +114,18 @@ export function ConvergenceMap() {
         </div>
 
         {/* Operating layer out */}
-        <div className="grid grid-cols-2 gap-2.5 min-[420px]:grid-cols-3 sm:grid-cols-5">
+        <div className="grid grid-cols-2 gap-3 min-[420px]:grid-cols-3 sm:grid-cols-5">
           {operatingLayer.map((item) => {
             const Icon = item.icon;
             return (
               <div
-                className="flex min-h-14 flex-col items-center justify-center gap-1.5 rounded-2xl border border-[#DCE6F4] bg-[#F8FBFF] px-2 py-3 text-center"
+                className="flex min-h-16 flex-col items-center justify-center gap-2 rounded-2xl border border-[#DCE6F4] bg-[#F8FBFF] px-3 py-4 text-center"
                 key={item.label}
               >
-                <span className="grid size-8 place-items-center rounded-lg bg-white text-[#0a0a0a] ring-1 ring-[#D8E6F8]">
-                  <Icon className="size-4" />
+                <span className="grid size-10 place-items-center rounded-xl bg-white text-[#0a0a0a] ring-1 ring-[#D8E6F8]">
+                  <Icon className="size-5" />
                 </span>
-                <span className="text-[0.72rem] leading-3 font-black text-[#0a0a0a]">
+                <span className="text-xs font-bold text-[#0a0a0a]">
                   {item.label}
                 </span>
               </div>

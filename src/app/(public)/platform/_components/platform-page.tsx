@@ -57,13 +57,12 @@ function HeroSection() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative w-full overflow-hidden bg-white">
-      <div className="mx-auto w-full max-w-[1680px] p-3 sm:p-4">
-        <div
-          className="relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[linear-gradient(135deg,#EEF4FF_0%,#F0EEFF_40%,#E8F4FF_70%,#F8FAFC_100%)]"
-          id="top"
-        >
-          <div className="relative grid min-h-[calc(100svh-10rem)] items-center gap-8 px-5 py-16 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+    <section
+      className="relative w-full overflow-hidden bg-[linear-gradient(135deg,#EEF4FF_0%,#F0EEFF_40%,#E8F4FF_70%,#F8FAFC_100%)]"
+      id="top"
+    >
+      <div className="mx-auto w-full max-w-[1680px]">
+        <div className="relative grid min-h-[calc(100svh-10rem)] items-center gap-8 px-5 py-16 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
             {/* Copy */}
             <motion.div
               className="text-center lg:text-left"
@@ -117,7 +116,6 @@ function HeroSection() {
               <SystemOrbit />
             </motion.div>
           </div>
-        </div>
       </div>
     </section>
   );
@@ -179,8 +177,8 @@ function ModulesSection() {
         <SectionHeading
           eyebrow=""
           eyebrowIcon={Layers}
-          lead="Nine modules work as one connected system for marketing, sales, support, and operations—no more switching between disconnected tools."
-          title={<>Everything your team needs&mdash;in one platform</>}
+          lead="Bring AI employees, CRM, omnichannel communication, automation, and analytics together to streamline every customer interaction and business workflow."
+          title={<>Everything your team needs&mdash;Everything your customers expect</>}
         />
 
         {/* Tab navigation with icons */}
@@ -960,7 +958,7 @@ function getAgentReply(agentSlug: string, userMsg: string): string {
 function HandoffSection() {
   return (
     <section
-      className={cn("relative bg-white py-20 lg:py-28", pageX)}
+      className={cn("relative bg-white py-12 lg:py-16", pageX)}
       id="handoff"
     >
       <div className="mx-auto max-w-7xl">

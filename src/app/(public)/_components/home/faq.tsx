@@ -17,7 +17,7 @@ const defaultFAQs: FAQItem[] = [
   {
     question: 'What is Auxify and how does it help businesses manage customers?',
     answer:
-      'Auxify is an AI-powered CRM and customer communication platform that helps businesses manage leads, conversations, follow-ups, and workflows from one place. It combines CRM, omnichannel messaging, automation, and AI agents so teams can respond faster, stay organized, and convert more customers.',
+      'Auxify is an AI-powered workforce platform that provides AI employees for sales, customer support, and customer operations. Combining AI agents, CRM, omnichannel communication, and workflow automation, Auxify helps businesses increase productivity, improve customer experiences, and drive revenue growth.',
   },
   {
     question: 'Does Auxify support WhatsApp, Meta, and omnichannel customer communication?',
